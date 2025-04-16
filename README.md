@@ -36,6 +36,8 @@ reduced_words = mapped_words.reduceByKey(lambda a, b: a+b) # 키를 기준으로
 
 - log
 ```python
+%pyspark
+
 file_path = 'file:///home/ubuntu/damf2/data/logs/2024-01-01.log'
 lines = sc.textFile(file_path)
 
@@ -59,6 +61,8 @@ count_rdd = mapped_lines.map(lambda line: ((line[5], line[2]), 1)).reduceByKey(l
 
 - join
 ```python
+%pyspark
+
 user_file_path = 'file:///home/ubuntu/damf2/data/user.csv'
 post_file_path = 'file:///home/ubuntu/damf2/data/post.csv'
 
@@ -76,6 +80,8 @@ joined_rdd = user_tuple.join(post_tuple)
 
 # DataFrame
 ```python
+%pyspark
+
 # load data
 file_path = 'file:///home/ubuntu/damf2/data/logs/2024-01-01.log'
 
@@ -100,6 +106,8 @@ df.take(2)
 
 - Pandas
 ```python
+%pyspark
+
 # toPandas
 pd_df = df.toPandas()
 
@@ -109,6 +117,8 @@ pd_df[['_c0', '_c2']]
 
 - spark DataFrame
 ```python
+%pyspark
+
 # columns
 df.select(df._c2).show()
 
@@ -132,6 +142,8 @@ df.groupby('method', '_c3').agg(min('_c4'), max('_c4'), mean('_c4')).show()
 
 - spark sql
 ```python
+%pyspark
+
 file_path = 'file:///home/ubuntu/damf2/data/logs/2024-01-01.log'
 df = spark.read.csv(file_path, sep=' ')
 df.createOrReplaceTempView('logs')
