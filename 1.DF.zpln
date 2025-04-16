@@ -1,0 +1,950 @@
+{
+  "paragraphs": [
+    {
+      "text": "%pyspark\n\nfile_path \u003d \u0027file:///home/ubuntu/damf2/data/logs/2024-01-01.log\u0027\n\ndf \u003d spark.read.csv(file_path, sep\u003d\u0027 \u0027)\ndf.show()",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-16 13:43:42.220",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------------+--------------------+--------------------+---+----+\n|            _c0|                 _c1|                 _c2|_c3| _c4|\n+---------------+--------------------+--------------------+---+----+\n| 207.135.88.100|[2024-01-01:00:00...|GET /product/2249...|301|3656|\n|    68.31.17.78|[2024-01-01:00:00...|GET /product/6758...|301| 403|\n|  218.240.70.24|[2024-01-01:00:02...|GET /contact HTTP...|200|1945|\n| 45.240.177.199|[2024-01-01:00:02...|GET /contact HTTP...|500|4195|\n| 189.171.214.73|[2024-01-01:00:04...|GET /product/3436...|400|3867|\n|  10.112.39.206|[2024-01-01:00:07...|POST /product/208...|400|2428|\n|  168.133.52.55|[2024-01-01:00:08...|GET /product/1784...|404|4005|\n| 87.240.194.222|[2024-01-01:00:12...|POST /login HTTP/1.1|404|4944|\n| 151.106.11.109|[2024-01-01:00:14...| GET /index HTTP/1.1|404|3664|\n| 112.193.216.79|[2024-01-01:00:15...|GET /contact HTTP...|404| 293|\n|  136.13.104.37|[2024-01-01:00:15...|GET /product/4092...|200|3821|\n| 67.112.215.102|[2024-01-01:00:15...|POST /index HTTP/1.1|200|2056|\n|   20.10.164.24|[2024-01-01:00:16...|POST /contact HTT...|301|3858|\n|  211.80.116.97|[2024-01-01:00:20...|GET /contact HTTP...|404|3705|\n|  44.179.82.107|[2024-01-01:00:20...| GET /login HTTP/1.1|400|4744|\n|139.116.206.175|[2024-01-01:00:22...|GET /product/6089...|400|3533|\n| 186.140.225.85|[2024-01-01:00:25...| GET /index HTTP/1.1|400|2037|\n|    79.97.55.27|[2024-01-01:00:27...| GET /login HTTP/1.1|200|3233|\n|   12.56.24.243|[2024-01-01:00:27...|POST /product/245...|400|3393|\n|  159.231.53.20|[2024-01-01:00:29...|POST /login HTTP/1.1|400| 516|\n+---------------+--------------------+--------------------+---+----+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://172.17.22.243:4040/jobs/job?id\u003d22"
+            },
+            {
+              "jobUrl": "http://172.17.22.243:4040/jobs/job?id\u003d23"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744778351530_1242872267",
+      "id": "paragraph_1744778351530_1242872267",
+      "dateCreated": "2025-04-16 13:39:11.530",
+      "dateStarted": "2025-04-16 13:43:42.222",
+      "dateFinished": "2025-04-16 13:43:42.514",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\ndf.show(1)",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-16 13:45:42.852",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+--------------+--------------------+--------------------+---+----+\n|           _c0|                 _c1|                 _c2|_c3| _c4|\n+--------------+--------------------+--------------------+---+----+\n|207.135.88.100|[2024-01-01:00:00...|GET /product/2249...|301|3656|\n+--------------+--------------------+--------------------+---+----+\nonly showing top 1 row\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://172.17.22.243:4040/jobs/job?id\u003d24"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744778574884_778838658",
+      "id": "paragraph_1744778574884_778838658",
+      "dateCreated": "2025-04-16 13:42:54.884",
+      "dateStarted": "2025-04-16 13:45:42.854",
+      "dateFinished": "2025-04-16 13:45:42.942",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\ndf.columns",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-16 13:46:39.148",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "[\u0027_c0\u0027, \u0027_c1\u0027, \u0027_c2\u0027, \u0027_c3\u0027, \u0027_c4\u0027]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744778742853_1515407705",
+      "id": "paragraph_1744778742853_1515407705",
+      "dateCreated": "2025-04-16 13:45:42.854",
+      "dateStarted": "2025-04-16 13:46:39.150",
+      "dateFinished": "2025-04-16 13:46:39.189",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\n\ndf.printSchema()",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-16 13:47:10.897",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- _c0: string (nullable \u003d true)\n |-- _c1: string (nullable \u003d true)\n |-- _c2: string (nullable \u003d true)\n |-- _c3: string (nullable \u003d true)\n |-- _c4: string (nullable \u003d true)\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744778799150_196894757",
+      "id": "paragraph_1744778799150_196894757",
+      "dateCreated": "2025-04-16 13:46:39.150",
+      "dateStarted": "2025-04-16 13:47:10.899",
+      "dateFinished": "2025-04-16 13:47:10.915",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\ndf.select(\u0027_c0\u0027, \u0027_c1\u0027).show()",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-16 13:48:08.424",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------------+--------------------+\n|            _c0|                 _c1|\n+---------------+--------------------+\n| 207.135.88.100|[2024-01-01:00:00...|\n|    68.31.17.78|[2024-01-01:00:00...|\n|  218.240.70.24|[2024-01-01:00:02...|\n| 45.240.177.199|[2024-01-01:00:02...|\n| 189.171.214.73|[2024-01-01:00:04...|\n|  10.112.39.206|[2024-01-01:00:07...|\n|  168.133.52.55|[2024-01-01:00:08...|\n| 87.240.194.222|[2024-01-01:00:12...|\n| 151.106.11.109|[2024-01-01:00:14...|\n| 112.193.216.79|[2024-01-01:00:15...|\n|  136.13.104.37|[2024-01-01:00:15...|\n| 67.112.215.102|[2024-01-01:00:15...|\n|   20.10.164.24|[2024-01-01:00:16...|\n|  211.80.116.97|[2024-01-01:00:20...|\n|  44.179.82.107|[2024-01-01:00:20...|\n|139.116.206.175|[2024-01-01:00:22...|\n| 186.140.225.85|[2024-01-01:00:25...|\n|    79.97.55.27|[2024-01-01:00:27...|\n|   12.56.24.243|[2024-01-01:00:27...|\n|  159.231.53.20|[2024-01-01:00:29...|\n+---------------+--------------------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://172.17.22.243:4040/jobs/job?id\u003d25"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744778830898_1583154161",
+      "id": "paragraph_1744778830898_1583154161",
+      "dateCreated": "2025-04-16 13:47:10.899",
+      "dateStarted": "2025-04-16 13:48:08.428",
+      "dateFinished": "2025-04-16 13:48:08.600",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\ndf.take(2)",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-16 13:49:24.634",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "[Row(_c0\u003d\u0027207.135.88.100\u0027, _c1\u003d\u0027[2024-01-01:00:00:08]\u0027, _c2\u003d\u0027GET /product/2249 HTTP/1.1\u0027, _c3\u003d\u0027301\u0027, _c4\u003d\u00273656\u0027), Row(_c0\u003d\u002768.31.17.78\u0027, _c1\u003d\u0027[2024-01-01:00:00:27]\u0027, _c2\u003d\u0027GET /product/6758 HTTP/1.1\u0027, _c3\u003d\u0027301\u0027, _c4\u003d\u0027403\u0027)]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://172.17.22.243:4040/jobs/job?id\u003d26"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744778888427_787379985",
+      "id": "paragraph_1744778888427_787379985",
+      "dateCreated": "2025-04-16 13:48:08.427",
+      "dateStarted": "2025-04-16 13:49:24.640",
+      "dateFinished": "2025-04-16 13:49:24.741",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\npd_df \u003d df.toPandas()",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-16 13:51:49.771",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://172.17.22.243:4040/jobs/job?id\u003d27"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744778964640_1431932229",
+      "id": "paragraph_1744778964640_1431932229",
+      "dateCreated": "2025-04-16 13:49:24.640",
+      "dateStarted": "2025-04-16 13:51:49.773",
+      "dateFinished": "2025-04-16 13:51:50.143",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\npd_df[[\u0027_c0\u0027, \u0027_c2\u0027]]",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-16 13:52:13.465",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "                 _c0                          _c2\n0     207.135.88.100   GET /product/2249 HTTP/1.1\n1        68.31.17.78   GET /product/6758 HTTP/1.1\n2      218.240.70.24        GET /contact HTTP/1.1\n3     45.240.177.199        GET /contact HTTP/1.1\n4     189.171.214.73   GET /product/3436 HTTP/1.1\n...              ...                          ...\n1164   117.209.30.67   GET /product/7109 HTTP/1.1\n1165   1.229.254.103   GET /product/8633 HTTP/1.1\n1166  133.249.165.49   GET /product/2118 HTTP/1.1\n1167   61.19.166.227   GET /product/7936 HTTP/1.1\n1168  112.208.10.255  POST /product/2482 HTTP/1.1\n\n[1169 rows x 2 columns]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744779017089_222139459",
+      "id": "paragraph_1744779017089_222139459",
+      "dateCreated": "2025-04-16 13:50:17.089",
+      "dateStarted": "2025-04-16 13:52:13.467",
+      "dateFinished": "2025-04-16 13:52:13.504",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\ndf.select(df._c2).show()",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-16 14:09:15.205",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+--------------------+\n|                 _c2|\n+--------------------+\n|GET /product/2249...|\n|GET /product/6758...|\n|GET /contact HTTP...|\n|GET /contact HTTP...|\n|GET /product/3436...|\n|POST /product/208...|\n|GET /product/1784...|\n|POST /login HTTP/1.1|\n| GET /index HTTP/1.1|\n|GET /contact HTTP...|\n|GET /product/4092...|\n|POST /index HTTP/1.1|\n|POST /contact HTT...|\n|GET /contact HTTP...|\n| GET /login HTTP/1.1|\n|GET /product/6089...|\n| GET /index HTTP/1.1|\n| GET /login HTTP/1.1|\n|POST /product/245...|\n|POST /login HTTP/1.1|\n+--------------------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://172.17.22.243:4040/jobs/job?id\u003d30"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744779120059_890112627",
+      "id": "paragraph_1744779120059_890112627",
+      "dateCreated": "2025-04-16 13:52:00.059",
+      "dateStarted": "2025-04-16 14:09:15.207",
+      "dateFinished": "2025-04-16 14:09:15.292",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\nfrom pyspark.sql.functions import split, col\n\ndf \u003d df.withColumn(\u0027method\u0027, split(col(\u0027_c2\u0027), \u0027 \u0027).getItem(0))\ndf \u003d df.withColumn(\u0027path\u0027, split(col(\u0027_c2\u0027), \u0027 \u0027).getItem(1))\ndf \u003d df.withColumn(\u0027protocal\u0027, split(col(\u0027_c2\u0027), \u0027 \u0027).getItem(2))",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-16 14:39:57.972",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744779225434_182853012",
+      "id": "paragraph_1744779225434_182853012",
+      "dateCreated": "2025-04-16 13:53:45.434",
+      "dateStarted": "2025-04-16 14:14:41.843",
+      "dateFinished": "2025-04-16 14:14:41.888",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\n\ndf.groupby(\u0027method\u0027).count().show()",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-16 14:14:45.219",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+------+-----+\n|method|count|\n+------+-----+\n|  POST|  573|\n|   GET|  596|\n+------+-----+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://172.17.22.243:4040/jobs/job?id\u003d36"
+            },
+            {
+              "jobUrl": "http://172.17.22.243:4040/jobs/job?id\u003d37"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744779458249_1574355015",
+      "id": "paragraph_1744779458249_1574355015",
+      "dateCreated": "2025-04-16 13:57:38.249",
+      "dateStarted": "2025-04-16 14:14:45.221",
+      "dateFinished": "2025-04-16 14:14:45.380",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\nfrom pyspark.sql.functions import min, max, mean\n\ndf \u003d df.select(\u0027method\u0027, \u0027_c3\u0027, col(\u0027_c4\u0027).cast(\u0027integer\u0027))\n\ndf.groupby(\u0027method\u0027, \u0027_c3\u0027).agg(min(\u0027_c4\u0027), max(\u0027_c4\u0027), mean(\u0027_c4\u0027)).show()",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-16 14:17:34.327",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+------+---+--------+--------+------------------+\n|method|_c3|min(_c4)|max(_c4)|          avg(_c4)|\n+------+---+--------+--------+------------------+\n|  POST|400|     284|    4999|2663.1074380165287|\n|   GET|404|     282|    4952|2606.8067226890757|\n|   GET|400|     214|    4986|2748.6456692913384|\n|   GET|200|     225|    4988| 2410.938596491228|\n|  POST|200|     247|    4989|2669.4227642276423|\n|   GET|301|     214|    4909| 2408.425925925926|\n|  POST|500|     304|    4989| 2622.151515151515|\n|  POST|404|     240|    4944|2402.6101694915255|\n|   GET|500|     213|    4992|         2544.8125|\n|  POST|301|     201|    4998|2788.9553571428573|\n+------+---+--------+--------+------------------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://172.17.22.243:4040/jobs/job?id\u003d42"
+            },
+            {
+              "jobUrl": "http://172.17.22.243:4040/jobs/job?id\u003d43"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744780309244_1398236679",
+      "id": "paragraph_1744780309244_1398236679",
+      "dateCreated": "2025-04-16 14:11:49.245",
+      "dateStarted": "2025-04-16 14:17:34.330",
+      "dateFinished": "2025-04-16 14:17:34.657",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\nfile_path \u003d \u0027file:///home/ubuntu/damf2/data/logs/2024-01-01.log\u0027\n\ndf \u003d spark.read.csv(file_path, sep\u003d\u0027 \u0027)\n\ndf.createOrReplaceTempView(\u0027logs\u0027)",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-16 14:35:16.192",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://172.17.22.243:4040/jobs/job?id\u003d44"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744780454043_1697913287",
+      "id": "paragraph_1744780454043_1697913287",
+      "dateCreated": "2025-04-16 14:14:14.043",
+      "dateStarted": "2025-04-16 14:35:16.194",
+      "dateFinished": "2025-04-16 14:35:16.393",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\nspark.sql(\u0027\u0027\u0027\n    SELECT * FROM logs\n\u0027\u0027\u0027).show()",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-16 14:36:29.965",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------------+--------------------+--------------------+---+----+\n|            _c0|                 _c1|                 _c2|_c3| _c4|\n+---------------+--------------------+--------------------+---+----+\n| 207.135.88.100|[2024-01-01:00:00...|GET /product/2249...|301|3656|\n|    68.31.17.78|[2024-01-01:00:00...|GET /product/6758...|301| 403|\n|  218.240.70.24|[2024-01-01:00:02...|GET /contact HTTP...|200|1945|\n| 45.240.177.199|[2024-01-01:00:02...|GET /contact HTTP...|500|4195|\n| 189.171.214.73|[2024-01-01:00:04...|GET /product/3436...|400|3867|\n|  10.112.39.206|[2024-01-01:00:07...|POST /product/208...|400|2428|\n|  168.133.52.55|[2024-01-01:00:08...|GET /product/1784...|404|4005|\n| 87.240.194.222|[2024-01-01:00:12...|POST /login HTTP/1.1|404|4944|\n| 151.106.11.109|[2024-01-01:00:14...| GET /index HTTP/1.1|404|3664|\n| 112.193.216.79|[2024-01-01:00:15...|GET /contact HTTP...|404| 293|\n|  136.13.104.37|[2024-01-01:00:15...|GET /product/4092...|200|3821|\n| 67.112.215.102|[2024-01-01:00:15...|POST /index HTTP/1.1|200|2056|\n|   20.10.164.24|[2024-01-01:00:16...|POST /contact HTT...|301|3858|\n|  211.80.116.97|[2024-01-01:00:20...|GET /contact HTTP...|404|3705|\n|  44.179.82.107|[2024-01-01:00:20...| GET /login HTTP/1.1|400|4744|\n|139.116.206.175|[2024-01-01:00:22...|GET /product/6089...|400|3533|\n| 186.140.225.85|[2024-01-01:00:25...| GET /index HTTP/1.1|400|2037|\n|    79.97.55.27|[2024-01-01:00:27...| GET /login HTTP/1.1|200|3233|\n|   12.56.24.243|[2024-01-01:00:27...|POST /product/245...|400|3393|\n|  159.231.53.20|[2024-01-01:00:29...|POST /login HTTP/1.1|400| 516|\n+---------------+--------------------+--------------------+---+----+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://172.17.22.243:4040/jobs/job?id\u003d46"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744781590821_939884596",
+      "id": "paragraph_1744781590821_939884596",
+      "dateCreated": "2025-04-16 14:33:10.822",
+      "dateStarted": "2025-04-16 14:36:05.899",
+      "dateFinished": "2025-04-16 14:36:05.988",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\ndf \u003d spark.sql(\u0027\u0027\u0027\n    SELECT *, SPLIT(_c2, \u0027 \u0027)[0] AS method, SPLIT(_c2, \u0027 \u0027)[1] AS path, SPLIT(_c2, \u0027 \u0027)[2] AS protocal\n    FROM logs\n\u0027\u0027\u0027)\ndf.show()\ndf.createOrReplaceTempView(\u0027logs2\u0027)",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-16 14:41:05.479",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------------+--------------------+--------------------+---+----+------+-------------+--------+\n|            _c0|                 _c1|                 _c2|_c3| _c4|method|         path|protocal|\n+---------------+--------------------+--------------------+---+----+------+-------------+--------+\n| 207.135.88.100|[2024-01-01:00:00...|GET /product/2249...|301|3656|   GET|/product/2249|HTTP/1.1|\n|    68.31.17.78|[2024-01-01:00:00...|GET /product/6758...|301| 403|   GET|/product/6758|HTTP/1.1|\n|  218.240.70.24|[2024-01-01:00:02...|GET /contact HTTP...|200|1945|   GET|     /contact|HTTP/1.1|\n| 45.240.177.199|[2024-01-01:00:02...|GET /contact HTTP...|500|4195|   GET|     /contact|HTTP/1.1|\n| 189.171.214.73|[2024-01-01:00:04...|GET /product/3436...|400|3867|   GET|/product/3436|HTTP/1.1|\n|  10.112.39.206|[2024-01-01:00:07...|POST /product/208...|400|2428|  POST|/product/2085|HTTP/1.1|\n|  168.133.52.55|[2024-01-01:00:08...|GET /product/1784...|404|4005|   GET|/product/1784|HTTP/1.1|\n| 87.240.194.222|[2024-01-01:00:12...|POST /login HTTP/1.1|404|4944|  POST|       /login|HTTP/1.1|\n| 151.106.11.109|[2024-01-01:00:14...| GET /index HTTP/1.1|404|3664|   GET|       /index|HTTP/1.1|\n| 112.193.216.79|[2024-01-01:00:15...|GET /contact HTTP...|404| 293|   GET|     /contact|HTTP/1.1|\n|  136.13.104.37|[2024-01-01:00:15...|GET /product/4092...|200|3821|   GET|/product/4092|HTTP/1.1|\n| 67.112.215.102|[2024-01-01:00:15...|POST /index HTTP/1.1|200|2056|  POST|       /index|HTTP/1.1|\n|   20.10.164.24|[2024-01-01:00:16...|POST /contact HTT...|301|3858|  POST|     /contact|HTTP/1.1|\n|  211.80.116.97|[2024-01-01:00:20...|GET /contact HTTP...|404|3705|   GET|     /contact|HTTP/1.1|\n|  44.179.82.107|[2024-01-01:00:20...| GET /login HTTP/1.1|400|4744|   GET|       /login|HTTP/1.1|\n|139.116.206.175|[2024-01-01:00:22...|GET /product/6089...|400|3533|   GET|/product/6089|HTTP/1.1|\n| 186.140.225.85|[2024-01-01:00:25...| GET /index HTTP/1.1|400|2037|   GET|       /index|HTTP/1.1|\n|    79.97.55.27|[2024-01-01:00:27...| GET /login HTTP/1.1|200|3233|   GET|       /login|HTTP/1.1|\n|   12.56.24.243|[2024-01-01:00:27...|POST /product/245...|400|3393|  POST|/product/2459|HTTP/1.1|\n|  159.231.53.20|[2024-01-01:00:29...|POST /login HTTP/1.1|400| 516|  POST|       /login|HTTP/1.1|\n+---------------+--------------------+--------------------+---+----+------+-------------+--------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://172.17.22.243:4040/jobs/job?id\u003d50"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744781733479_227693858",
+      "id": "paragraph_1744781733479_227693858",
+      "dateCreated": "2025-04-16 14:35:33.479",
+      "dateStarted": "2025-04-16 14:41:05.481",
+      "dateFinished": "2025-04-16 14:41:05.579",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\nspark.sql(\u0027\u0027\u0027\n    SELECT * FROM logs2\n    WHERE _c3 \u003d 400\n\u0027\u0027\u0027).show()",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-16 14:41:59.183",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------------+--------------------+--------------------+---+----+------+-------------+--------+\n|            _c0|                 _c1|                 _c2|_c3| _c4|method|         path|protocal|\n+---------------+--------------------+--------------------+---+----+------+-------------+--------+\n| 189.171.214.73|[2024-01-01:00:04...|GET /product/3436...|400|3867|   GET|/product/3436|HTTP/1.1|\n|  10.112.39.206|[2024-01-01:00:07...|POST /product/208...|400|2428|  POST|/product/2085|HTTP/1.1|\n|  44.179.82.107|[2024-01-01:00:20...| GET /login HTTP/1.1|400|4744|   GET|       /login|HTTP/1.1|\n|139.116.206.175|[2024-01-01:00:22...|GET /product/6089...|400|3533|   GET|/product/6089|HTTP/1.1|\n| 186.140.225.85|[2024-01-01:00:25...| GET /index HTTP/1.1|400|2037|   GET|       /index|HTTP/1.1|\n|   12.56.24.243|[2024-01-01:00:27...|POST /product/245...|400|3393|  POST|/product/2459|HTTP/1.1|\n|  159.231.53.20|[2024-01-01:00:29...|POST /login HTTP/1.1|400| 516|  POST|       /login|HTTP/1.1|\n|   56.48.106.20|[2024-01-01:00:33...|POST /contact HTT...|400|4084|  POST|     /contact|HTTP/1.1|\n|  190.89.245.12|[2024-01-01:00:35...|POST /product/437...|400|4806|  POST|/product/4370|HTTP/1.1|\n| 156.92.195.104|[2024-01-01:00:37...|POST /product/658...|400|1999|  POST|/product/6581|HTTP/1.1|\n|  119.64.132.34|[2024-01-01:00:46...|POST /index HTTP/1.1|400|2730|  POST|       /index|HTTP/1.1|\n|    5.50.187.51|[2024-01-01:00:47...|POST /login HTTP/1.1|400|3297|  POST|       /login|HTTP/1.1|\n|   216.11.25.22|[2024-01-01:00:52...|POST /product/117...|400|3398|  POST|/product/1171|HTTP/1.1|\n|    8.79.213.97|[2024-01-01:00:55...|POST /product/406...|400| 721|  POST|/product/4066|HTTP/1.1|\n|  135.104.12.71|[2024-01-01:00:56...|GET /contact HTTP...|400|2557|   GET|     /contact|HTTP/1.1|\n|   3.83.154.179|[2024-01-01:00:58...|POST /login HTTP/1.1|400|1750|  POST|       /login|HTTP/1.1|\n|   175.35.2.252|[2024-01-01:01:02...|POST /index HTTP/1.1|400|1173|  POST|       /index|HTTP/1.1|\n| 97.120.251.169|[2024-01-01:01:05...| GET /index HTTP/1.1|400| 704|   GET|       /index|HTTP/1.1|\n|  124.87.34.217|[2024-01-01:01:08...|POST /login HTTP/1.1|400|3375|  POST|       /login|HTTP/1.1|\n|  64.96.149.100|[2024-01-01:01:08...|GET /product/7749...|400|4515|   GET|/product/7749|HTTP/1.1|\n+---------------+--------------------+--------------------+---+----+------+-------------+--------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://172.17.22.243:4040/jobs/job?id\u003d51"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744781907104_1589095446",
+      "id": "paragraph_1744781907104_1589095446",
+      "dateCreated": "2025-04-16 14:38:27.105",
+      "dateStarted": "2025-04-16 14:41:59.186",
+      "dateFinished": "2025-04-16 14:41:59.343",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\nspark.sql(\u0027\u0027\u0027\n    SELECT * FROM logs2\n    WHERE _c3 \u003d 200 AND path LIKE \u0027%product%\u0027\n\u0027\u0027\u0027).show()",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-16 14:43:39.422",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------------+--------------------+--------------------+---+----+------+-------------+--------+\n|            _c0|                 _c1|                 _c2|_c3| _c4|method|         path|protocal|\n+---------------+--------------------+--------------------+---+----+------+-------------+--------+\n|  136.13.104.37|[2024-01-01:00:15...|GET /product/4092...|200|3821|   GET|/product/4092|HTTP/1.1|\n|   75.92.62.147|[2024-01-01:00:43...|POST /product/537...|200|1343|  POST|/product/5376|HTTP/1.1|\n|  159.92.226.12|[2024-01-01:00:45...|GET /product/1036...|200|2604|   GET|/product/1036|HTTP/1.1|\n|    45.140.6.46|[2024-01-01:00:50...|GET /product/8977...|200| 328|   GET|/product/8977|HTTP/1.1|\n|  219.237.58.27|[2024-01-01:01:01...|POST /product/231...|200|1984|  POST|/product/2316|HTTP/1.1|\n| 21.208.179.100|[2024-01-01:01:16...|POST /product/316...|200|1037|  POST|/product/3168|HTTP/1.1|\n|200.124.133.218|[2024-01-01:01:21...|POST /product/358...|200|3236|  POST|/product/3585|HTTP/1.1|\n|  97.143.175.70|[2024-01-01:01:23...|GET /product/3714...|200|4065|   GET|/product/3714|HTTP/1.1|\n|209.254.198.138|[2024-01-01:01:57...|POST /product/700...|200|1437|  POST|/product/7009|HTTP/1.1|\n|  43.238.45.109|[2024-01-01:01:58...|GET /product/1027...|200|2602|   GET|/product/1027|HTTP/1.1|\n| 154.129.165.68|[2024-01-01:02:02...|POST /product/230...|200|4616|  POST|/product/2302|HTTP/1.1|\n|   112.30.10.95|[2024-01-01:02:37...|POST /product/526...|200|1788|  POST|/product/5267|HTTP/1.1|\n|   178.4.112.69|[2024-01-01:02:44...|POST /product/670...|200|1101|  POST|/product/6706|HTTP/1.1|\n| 171.135.208.80|[2024-01-01:03:17...|POST /product/593...|200|3241|  POST|/product/5937|HTTP/1.1|\n|  53.213.66.121|[2024-01-01:03:23...|GET /product/5117...|200|3237|   GET|/product/5117|HTTP/1.1|\n| 88.238.130.229|[2024-01-01:03:33...|GET /product/1880...|200|4682|   GET|/product/1880|HTTP/1.1|\n|143.213.111.114|[2024-01-01:03:35...|POST /product/255...|200|3843|  POST|/product/2557|HTTP/1.1|\n|    56.16.1.156|[2024-01-01:03:45...|POST /product/856...|200|3615|  POST|/product/8566|HTTP/1.1|\n| 138.96.116.139|[2024-01-01:03:52...|POST /product/801...|200|2525|  POST|/product/8017|HTTP/1.1|\n|     8.95.79.30|[2024-01-01:04:03...|POST /product/316...|200|2453|  POST|/product/3161|HTTP/1.1|\n+---------------+--------------------+--------------------+---+----+------+-------------+--------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://172.17.22.243:4040/jobs/job?id\u003d52"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744782119185_2042871416",
+      "id": "paragraph_1744782119185_2042871416",
+      "dateCreated": "2025-04-16 14:41:59.185",
+      "dateStarted": "2025-04-16 14:43:39.424",
+      "dateFinished": "2025-04-16 14:43:39.657",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\nspark.sql(\u0027\u0027\u0027\n    SELECT method, COUNT(*) FROM logs2\n    GROUP BY method\n\u0027\u0027\u0027).show()",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-16 14:45:15.036",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+------+--------+\n|method|count(1)|\n+------+--------+\n|  POST|     573|\n|   GET|     596|\n+------+--------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://172.17.22.243:4040/jobs/job?id\u003d55"
+            },
+            {
+              "jobUrl": "http://172.17.22.243:4040/jobs/job?id\u003d56"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744782219424_1867912161",
+      "id": "paragraph_1744782219424_1867912161",
+      "dateCreated": "2025-04-16 14:43:39.424",
+      "dateStarted": "2025-04-16 14:45:15.038",
+      "dateFinished": "2025-04-16 14:45:15.194",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-16 14:44:59.384",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744782299383_280267724",
+      "id": "paragraph_1744782299383_280267724",
+      "dateCreated": "2025-04-16 14:44:59.384",
+      "status": "READY"
+    }
+  ],
+  "name": "1.DF",
+  "id": "2KR6RZ117",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.11.2",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}
