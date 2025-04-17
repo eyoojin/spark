@@ -383,6 +383,7 @@ df.groupBy('UniqueCarrier').agg(
 ).show()
 ```
 ```python
+%pyspark
 df.groupBy('UniqueCarrier').agg(
     sum(df.Cancelled).alias('cancelled_count'),
     count('*').alias('total_count')
@@ -391,6 +392,7 @@ df.groupBy('UniqueCarrier').agg(
 
 - 가장 붐비는 공항
 ```sql
+%sql
 SELECT *, origin_count + dest_count AS total_count
 FROM (
 (SELECT Origin, COUNT(*) AS origin_count
